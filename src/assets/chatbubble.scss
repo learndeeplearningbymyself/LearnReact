@@ -1,0 +1,92 @@
+.chat-bubble {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+
+    .last-time-stamp {
+        color: #d0d0d0;
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .ava {
+        height: 50px;
+        margin-bottom: 15px;
+        width: 50px;
+    }
+
+    .papers {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .paper {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .paper-content {
+        border-radius: 30px;
+        display: inline-block;
+        padding: 15px 20px;
+        max-width: 60%;
+        white-space: normal;
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .paper-emoji {
+        display: inline-block;
+        font-size: 3em;
+    }
+}
+
+.picker-close {
+    display: none;
+}
+
+.picker-open {
+    display: inline-block;
+}
+
+.chat-bubble-friend {
+    .ava {
+        float: left;
+    }
+
+    .paper-content {
+        float: left;
+    }
+
+    .papers {
+        padding-left: 30px;
+    }
+}
+
+.chat-bubble-mine {
+    .ava {
+        float: right;
+    }
+
+    .last-time-stamp {
+        float: right;
+        margin-right: 15px;
+    }
+
+    .paper-content {
+        background-color: #0180f8;
+        float: right;
+        margin-right: 30px;
+
+        p {
+            color: white;
+        }
+    }
+
+    .paper-emoji {
+        float: right;
+        padding-right: 30px;
+    }
+}
