@@ -8484,6 +8484,13 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
+react-viewer@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/react-viewer/-/react-viewer-2.9.0.tgz#e83dafd157828e4a6ce91511596c45824f06e67d"
+  integrity sha512-nVt9k68aHeN5ksZcmXz/tKBXmzmVhoOFyj9Mxx8naaH2mp3bAo48RRuoOvIAFGCF3KpgLT9FBoYc00R2lcdy/Q==
+  dependencies:
+    classnames "^2.2.5"
+
 react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"

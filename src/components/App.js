@@ -5,10 +5,13 @@ import SendIcon from '@material-ui/icons/Send';
 import MoodIcon from '@material-ui/icons/Mood';
 import { Picker } from 'emoji-mart';
 import * as faker from 'faker';
+import Drawer from './Drawer';
+import Grid from '@material-ui/core/Grid';
 
 import Main from './ChatBubble/Main';
 
 import 'emoji-mart/css/emoji-mart.css';
+import ChatSetting from './ChatSetting';
 
 const emojiRegex = require('emoji-regex/text');
 
@@ -85,18 +88,13 @@ class App extends Component {
 
 		return(
 			<div className="App">
-				<Main messages={messages} />
-				<Input value={newMessage} onChange={this.handleInputChange.bind(this)} />
-				<MoodIcon onClick={this.togglePicker.bind(this)} />
-				<Fab onClick={this.handleSubmit.bind(this)} color="primary" aria-label="Send">
-					<SendIcon />
-				</Fab>
-				<Picker
-					style={pickerStyle}
-					set='messenger'
-					autoFocus={false}
-					onClick={this.onClickEmoji.bind(this)}
-				/>
+				<Grid container spacing={24}>
+					<Grid item xs={9}>
+					</Grid>
+        			<Grid item xs={3}>
+						<ChatSetting />
+					</Grid>
+				</Grid>
 			</div>
 		);
 	}
